@@ -1,0 +1,41 @@
+.flex-container {
+  display: flex;
+  background-color: #673ab7;
+  width: 80%;
+  height: 75%;
+}
+
+.showcase{
+  background-color: #92b0c2;
+  width: 20%;
+  height: 95%;
+  margin: 10px;
+  padding: 0px;
+  padding-top: 0%;
+  margin-left: auto;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.viewer{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: inherit;
+}
+
+.imagewrapper {
+  background-color: #f1f1f1;
+  flex: 1;
+  box-sizing: border-box;
+  width: 30%;
+  height: 95%;
+  margin: 10px;
+  padding: 20px;
+
+}

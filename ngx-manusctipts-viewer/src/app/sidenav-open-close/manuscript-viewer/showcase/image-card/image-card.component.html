@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]='imageUrl'  style="width:100%">
+  <div class="container">
+      <button (click)='editImageClicked()' class="cardButton" type="button">
+          <i class="material-icons">edit</i>
+      </button>
+      <!-- <i class="material-icons">visibility off </i> -->
+      <mat-form-field *ngIf="_imagePage.version">
+        <mat-select [(value)]="selectedVersion" (selectionChange)="versionChangeSelection($event)">
+          <mat-option *ngFor="let version of versions"  value={{version}}>Version {{version}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</div>

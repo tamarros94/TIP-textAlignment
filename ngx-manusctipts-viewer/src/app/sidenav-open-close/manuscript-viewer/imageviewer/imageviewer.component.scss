@@ -1,0 +1,43 @@
+:host {
+  display: block;
+
+  canvas {
+      margin: 0 auto;
+      display: block;
+  }
+}
+
+[hidden] { display: none !important;}
+
+
+canvas {
+  border: 1px solid #ccc;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.canvasForm {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+  &>div {
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

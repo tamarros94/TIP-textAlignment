@@ -1,0 +1,24 @@
+<h3 style="margin: 0%">ManuscriptsViewer</h3>
+<!-- <div class="canvasForm" style="padding:0%"> //option for upload
+    <div>
+      <label >Resource Files: </label>
+      <input  (change)="handleInputChange($event)" type="file" accept="image/*,application/pdf" required multiple>
+    </div>
+</div> -->
+<h4 style="margin: 1%" *ngIf=manuscript>Current Manuscript: {{manuscript.title}}</h4>
+
+<div class="flex-container">
+    <div #imagewrapper class="imagewrapper">
+        <app-imageviewer [imagePageMetadata]="manuscript && _workingImagePage"
+                         [width]="canvasDim.width"
+                         [height]="canvasDim.height"
+                         [currentImageLayerVersion]='manuscript && _workingImagePageVersion'
+                         (saveImagePage)='onSaveCurrentWorkingImagePage($event)'></app-imageviewer>
+    </div>
+  <div class="showcase">
+    <app-showcase [imagePages]="manuscript && manuscript.pages"
+                  (imageCardEdit)='onImageEditClicked($event)'
+                  (versionChange) ='onVersionSelected($event)' ></app-showcase>
+  </div>
+</div>
+

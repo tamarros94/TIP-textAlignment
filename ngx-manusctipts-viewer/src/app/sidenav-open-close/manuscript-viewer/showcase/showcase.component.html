@@ -1,0 +1,13 @@
+<div class="a" >
+	<h5>images layers</h5>
+</div>
+<div id="container">
+		<div class="inner_container" *ngIf=_imagePages>
+			<div class="box" *ngFor="let page of _imagePages; index as i" >
+				<p align="right" class="cardnumber">{{i+1}}</p>
+				<app-image-card [imagePage] = 'page'
+                        (imageCardEdit)='onImageEditClicked($event)'
+                        (versionChangeClicked)='onVersionChangeClicked($event)'></app-image-card>
+			</div>
+		</div>
+	</div>
