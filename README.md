@@ -26,11 +26,12 @@ match: [ { <polygon1_vertices>, <polygon2_vertices }, … ,  { <polygon1_vertice
 }]
 ```
 
-*The struct that we get is an array, consisting e_1, … ,e_n elements.
+The struct that we get is an array, consisting e_1, … ,e_n elements.
 Each element is a struct containing:
-•	Both manuscripts id's.
-•	Page number in both manuscripts.
-•	An array of all the matching polygons (describing some words) in those pages.
+
+-	Both manuscripts id's.
+-	Page number in both manuscripts.
+-	An array of all the matching polygons (describing some words) in those pages.
 
 
 ### Code Implementation
