@@ -1,11 +1,11 @@
 # TIP-textAlignment
 
-Topics in Image Processing – Manual Alignment
+Topics in Image Processing – Text Alignment
 By Amir Golan and Tamar Rosen.
 
 ### General Description
 
-Given a basic Angular project which presented a manuscript viewer, our goal was to add a feature of 'Manual Alignment' between 2 manuscripts using MongoDB servers to save the users' results.
+Given a basic Angular project which presented a manuscript viewer, our goal was to add a feature of 'Text Alignment' between 2 manuscripts using MongoDB servers to save the users' results.
 The meaning of this feature is to allow the following:
 (1) presenting 2 different manuscripts side by side and (2) selecting a word from the first manuscript and matching it to another word from the second manuscript (this is intended to be done manually by the user, by selecting both areas using a polygon marker tool, which exists in the image viewer component).
 In addition to adding the feature of the manual alignment tool, we were also asked to save the user's marked matches (the manual alignment details) in some data base (using MongoDB), for a later use.
